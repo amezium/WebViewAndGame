@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Lucky Hammer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">Setting</string>
+    <string name="record">Record</string>
+    <string name="game">Start</string>
+    <string name="web_view">Web View</string>
+    <string name="exit">Exit</string>
+    <string name="repeat">Repeat</string>
+    <string name="records">Top 3 set records:</string>
+    <string name="level">Select difficulty level:</string>
+    <string name="level_normal">Normal difficulty(4 cells)</string>
+    <string name="level_hard">Hard difficulty(6 cells)</string>
+    <string name="round">Round</string>
+    <string name="nextRound">Next Round</string>
+    <string name="number_round">Round %1$s complected \n Your result %2$s coins</string>
+    <string name="result">Good Game! Your score: %1$s</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions_1">To win, you must guess which cell contains the prize.
+        \nThe game has 3 rounds and 3 attempts in each of the rounds.</string>
+    <string name="instructions_2">The faster you guess where the prize is, the more coins you get:</string>
+    <string name="instructions_3">First time 100 coins!</string>
+    <string name="instructions_4">From the second time 70 coins!</string>
+    <string name="instructions_5">From the third 50 coins!</string>
+    <string name="instructions_6">Also in the game you can choose the difficulty. The higher the difficulty,
+        the more cells to choose from, but you can also earn more coins.</string>
+    <string name="instructions_7">Good game!</string>
+    <string name="attempts">Attempts:</string>
+    <string name="coins">Coins:</string>
+
+    <string name="facebook_app_id">5055223034556725</string>
+</resources>

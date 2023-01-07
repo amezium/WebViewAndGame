@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loadFragment">
+
+    <fragment
+        android:id="@+id/loadFragment"
+        android:name="com.glu.testwork.presentation.fragments.LoadFragment"
+        android:label="fragment_load"
+        tools:layout="@layout/fragment_load">
+        <action
+            android:id="@+id/action_loadFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameMenuFragment"
+        android:name="com.glu.testwork.presentation.fragments.GameMenuFragment"
+        android:label="fragment_game_menu"
+        tools:layout="@layout/fragment_game_menu" >
+        <action
+            android:id="@+id/action_gameMenuFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+        <action
+            android:id="@+id/action_gameMenuFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_gameMenuFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameMenuFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.glu.testwork.presentation.fragments.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment"
+            app:popUpTo="@id/gameMenuFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.glu.testwork.presentation.fragments.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_recordFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment"
+            app:popUpTo="@id/gameMenuFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.glu.testwork.presentation.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment"
+            app:popUpTo="@id/gameMenuFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.glu.testwork.presentation.fragments.InstructionsFragment"
+        android:label="fragment_instructions"
+        tools:layout="@layout/fragment_instructions" >
+        <action
+            android:id="@+id/action_instructionsFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment"
+            app:popUpTo="@id/gameMenuFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>
